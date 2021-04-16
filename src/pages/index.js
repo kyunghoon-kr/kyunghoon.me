@@ -5,12 +5,10 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/post"
-import { GlobalStyle } from "../styles/global-style"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  console.log('POSTS', posts)
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -26,7 +24,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <>
-      <GlobalStyle />
       <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />

@@ -1,8 +1,8 @@
 ---
 title: 유사배열 파헤치기
 date: "2021-02-12T19:15:00.000Z"
-description: "Gatsby와 Netlify를 이용한 GitHub Blog 구축"
-tag: "Javascript"
+description: "Javascript의 유사배열 개념에 대해 알아보았다."
+tag: "javascript"
 thumbnail: "test-commit.png"
 ---
 
