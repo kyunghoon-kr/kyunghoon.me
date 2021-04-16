@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ContentContainer } from './layout.js'
 import { Link, graphql, useStaticQuery } from "gatsby"
+import typography from '../utils/typography';
 
 const HeaderBackground = styled.div`
     width: 100vw;
@@ -18,6 +19,7 @@ const Cover = styled.div`
     width: 100%;
     height: 100%;
 `;
+
 const HeaderCover = styled(Cover)`
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
@@ -34,8 +36,8 @@ const Banner = styled.div`
     width: 100%;
     text-align: center;
     padding: 2.5rem 0 6.5rem;
-    font-family: 'nanum', cursive;
     font-weight: 400;
+    font-family: "Noto Sans KR", cursive;
 `;
 
 const Category = styled.div`

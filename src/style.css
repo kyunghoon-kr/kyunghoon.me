@@ -366,12 +366,3 @@ table thead tr th {
     list-style-position: inside;
   }
 }
-
-@font-face {
-  font-family: "nanum";
-  src: url('/fonts/nanum.ttf')
-}
-
-.nanum {
-  font-family: nanum;
-}
