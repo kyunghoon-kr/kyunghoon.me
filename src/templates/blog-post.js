@@ -4,10 +4,12 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  let thumbnailImgFluid = post.frontmatter.thumbnail.childImageSharp.fluid
   const { previous, next } = data
 
   return (
@@ -23,6 +25,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <Img fluid={thumbnailImgFluid}/>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
