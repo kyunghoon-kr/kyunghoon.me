@@ -1,16 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ContentContainer } from './layout.js'
 import { Link, graphql, useStaticQuery } from "gatsby"
 import typography from '../utils/typography';
 
 const HeaderBackground = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 24rem;
     position: relative;
     background: url("/images/blackboard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Cafe24Oneprettynight';
 `;
 
 const Cover = styled.div`
@@ -28,6 +29,7 @@ const HeaderCover = styled(Cover)`
 
 const Logo = styled.div`
     font-size: 1.5rem;
+    color: white;
 `;
 
 const Banner = styled.div`
@@ -35,9 +37,8 @@ const Banner = styled.div`
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    padding: 2.5rem 0 6.5rem;
+    /* padding: 2.5rem 0 6.5rem; */
     font-weight: 400;
-    font-family: "Noto Sans KR", cursive;
 `;
 
 const Category = styled.div`
@@ -66,28 +67,39 @@ const TagsListQuery = graphql`
   }
 `;
 
+const FlexContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+`
+
 const Header:React.FC = () => {
     const categories = useStaticQuery(TagsListQuery).allMarkdownRemark.group;
     return (
         <HeaderBackground>
             <HeaderCover>
                 <ContentContainer>
-                    <Logo>👻 kyunghoon.me </Logo>
-                    <Banner>
-                        Code, Log, Archive
-                        <br/>기록하는 습관으로 성장하는 블로그
-                    </Banner>
-                    <Categories>
-                        {categories.map((category: { fieldValue: string }) => {
-                            return (
-                                <Link to={`/${category.fieldValue}`} key={category.fieldValue}>
-                                    <Category>
-                                        {category.fieldValue} 
-                                    </Category>
-                                </Link>
-                            )
-                        })}
-                    </Categories>
+                    <FlexContainer>
+                        <Link to='/'>
+                            <Logo>👻 kyunghoon.me </Logo>
+                        </Link>
+                        <Banner>
+                            내가쓰는 개발 아카이브 
+                        </Banner>
+                        <Categories>
+                            {categories.map((category: { fieldValue: string }) => {
+                                return (
+                                    <Link to={`/${category.fieldValue}`} key={category.fieldValue}>
+                                        <Category>
+                                            {category.fieldValue} 
+                                        </Category>
+                                    </Link>
+                                )
+                            })}
+                        </Categories>
+                    </FlexContainer>
+
                 </ContentContainer>
             </HeaderCover>
         </HeaderBackground>
