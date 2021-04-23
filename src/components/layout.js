@@ -35,7 +35,8 @@ const Layout = ({ location, title, children, maxWidth }) => {
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
-        , Published by Kyunghoon
+        , Published by @kyunghoon-kr
+        <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </Footer>
     </>
   )
