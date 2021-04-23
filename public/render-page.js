@@ -144,13 +144,13 @@ var plugins = [{
     "background_color": "#ffffff",
     "theme_color": "#663399",
     "display": "minimal-ui",
-    "icon": "content/assets/gatsby-icon.png",
+    "icon": "content/assets/ghost.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "4a9773549091c227cd2eb82ccd9c5e3a"
+    "cacheDigest": "94f229bec2948e8b47385184fc25bc1d"
   }
 }, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
