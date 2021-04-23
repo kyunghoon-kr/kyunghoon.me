@@ -10,7 +10,8 @@ interface PostProps {
 }
 
 const PostCard = styled.div`
-    width: 30%;
+    width: 30.3333%;
+    margin: 0 1.5%;
     position: relative;
     border: 1px solid #ebebe8;
     margin-bottom: 2rem;
@@ -22,6 +23,10 @@ const PostCard = styled.div`
 
     &:hover .gatsby-image-wrapper {
       transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 48rem) {
+      width: 47%;
     }
 `;
 

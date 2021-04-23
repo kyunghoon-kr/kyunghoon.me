@@ -10,7 +10,7 @@ interface PostListProps {
 
 const PostListWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 4rem 0;
 `;
