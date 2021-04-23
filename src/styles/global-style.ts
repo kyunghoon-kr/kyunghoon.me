@@ -13,7 +13,20 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.5rem;
     }
     p {
-        font-size: 1rem;
         line-height: 1.5;
     }
+
+    @media only screen and (max-width: 48rem) {
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+    
 `;

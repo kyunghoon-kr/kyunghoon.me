@@ -32,6 +32,9 @@ const Tag = styled.div`
 
 const Article = styled.div`
   margin: 3rem 0;
+  p {
+    font-size: 1.1rem;
+  }
   h1 {
     color: #1EB49F;
     line-height: 1.5;
@@ -63,6 +66,7 @@ const Article = styled.div`
   a:hover:after {
     width: 100%;
   }
+
   a:after {
     content: "";
     position: absolute;
@@ -79,6 +83,11 @@ const ImageContainer = styled.div`
   .gatsby-image-wrapper {
     width: 70%;
     margin: 0 auto;
+  }
+  @media only screen and (max-width: 48rem) {
+    .gatsby-image-wrapper {
+      width: 100%;
+    }
   }
 `;
 

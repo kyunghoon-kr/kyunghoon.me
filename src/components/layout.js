@@ -8,6 +8,10 @@ export const ContentContainer = styled.div`
   max-width: ${(props) => props.maxWidth || '54rem' };
   margin: 0 auto;
   height: 100%;
+  @media only screen and (max-width: 48rem) {
+      max-width: 100%;
+      padding: 0rem 1rem;
+  }
 `;
 
 const Footer = styled.footer`

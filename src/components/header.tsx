@@ -12,6 +12,9 @@ const HeaderBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Cafe24Oneprettynight';
+    @media only screen and (max-width: 48rem) {
+      height: 17rem;
+    }
 `;
 
 const Cover = styled.div`
@@ -30,6 +33,7 @@ const HeaderCover = styled(Cover)`
 const Logo = styled.div`
     font-size: 1.5rem;
     color: white;
+   
 `;
 
 const Banner = styled.div`
@@ -39,6 +43,9 @@ const Banner = styled.div`
     text-align: center;
     /* padding: 2.5rem 0 6.5rem; */
     font-weight: 400;
+    @media only screen and (max-width: 48rem) {
+      font-size: 2.8rem;
+    }
 `;
 
 const Category = styled.div`
