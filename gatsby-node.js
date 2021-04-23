@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const blogPostList = path.resolve(`./src/templates/post-list.js`)
+  const blogPostList = path.resolve(`./src/templates/post-list-by-tag.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -23,9 +23,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
             frontmatter {
               title
-              date(formatString: "MMMM DD, YYYY")
+              date(formatString: "YYYY-MM-DD")
               description
               tag
+             
             }
           }
         }
@@ -72,14 +73,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   if (tags.length > 0) {
-    tags.forEach((tag, index) => {
-      const filteredPost = posts.filter(post => post.frontmatter.tag == tag.fieldValue)
+    tags.forEach((tag) => {
       createPage({
         path: tag.fieldValue,
         component: blogPostList,
         context: {
           tag: tag.fieldValue,
-          posts: filteredPost
         }
       })
     })

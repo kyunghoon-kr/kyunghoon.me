@@ -49,6 +49,7 @@ const Category = styled.div`
     &:hover {
         color: #1eb49f;
     }
+    margin-right: 1rem;
 `;
 
 const Categories = styled.div`

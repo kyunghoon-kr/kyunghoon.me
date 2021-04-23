@@ -4,7 +4,8 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Post from "../components/post"
+import Post from "../components/post/post"
+import PostList from "../templates/post-list"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,16 +26,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <>
       <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        <ol style={{ listStyle: `none` }}>
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-            return (
-              <Post key={post.fields.slug} post={post} title={title} />
-            )
-          })}
-        </ol>
+        <SEO title="Main" description="반갑습니다, June의 개발 아카이브입니다."/>
+        {/* <Bio /> */}
+        <PostList posts={posts} />
+
       </Layout>
       </>
   )
@@ -56,7 +51,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY-MM-DD")
           title
           description
           tag

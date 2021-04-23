@@ -32,6 +32,47 @@ const Tag = styled.div`
 
 const Article = styled.div`
   margin: 3rem 0;
+  h1 {
+    color: #1EB49F;
+    line-height: 1.5;
+  }
+
+  h2, h3 {
+    line-height: 1.5;
+  }
+
+  pre, code {
+    margin: 1rem 0rem;
+  }
+
+  code {
+    color: #1EB49F;
+    font-family: 'RIDIBatang' !important;
+  }
+
+  pre code {
+    font-family: Consolas, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, monospace;
+    color: #363738;
+  }
+
+  a {
+    color: #1B60FF;
+    position: relative;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background-color: #1B60FF;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
 `;
 
 const ImageContainer = styled.div`

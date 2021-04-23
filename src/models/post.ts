@@ -3,9 +3,10 @@ export interface Frontmatter {
     description: string,
     date: Date,
     tag: string,
+    thumbnail: any
 }
 
-export interface Post {
+export interface PostModel {
     type: string,
     excerpt: string,
     fields: {

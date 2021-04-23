@@ -1,8 +1,8 @@
 ---
 title: 유사배열 파헤치기
 date: "2021-02-12T19:15:00.000Z"
-description: "Javascript의 유사배열 개념에 대해 알아보았다. 알았냐아아아아아아아아아아"
-tag: "javascript"
+description: "Javascript의 유사배열 개념에 대해 알아보았다."
+tag: "typescript"
 thumbnail: "test-commit.png"
 ---
 
@@ -56,10 +56,3 @@ thumbnail: "test-commit.png"
 하하
 하하
 하하
-
-```javascript
-console.log("h1");
-```
-
-`IndexLang 하다`라고 말하는듯하다
-[링크 보러가기](https://www.typescriptlang.org/docs/handbook/basic-types.html)
