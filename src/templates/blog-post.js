@@ -32,9 +32,12 @@ const Tag = styled.div`
 
 const Article = styled.div`
   margin: 3rem 0;
+  word-break: break-all;
   p {
     font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
+
   h1 {
     color: #1EB49F;
     line-height: 1.5;
