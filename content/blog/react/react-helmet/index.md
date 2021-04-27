@@ -103,7 +103,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
 ---
 
-## 📚 레퍼런스
+# 📚 레퍼런스
 
 react-helmet의 동작 원리  
 [https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html](https://jeonghwan-kim.github.io/dev/2020/08/15/react-helmet.html)
