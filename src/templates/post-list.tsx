@@ -12,7 +12,7 @@ const PostListWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 4rem 0;
+    padding: 4.2rem 0;
 `;
 
 const PostList:React.FC<PostListProps> = ({ posts }) => {
