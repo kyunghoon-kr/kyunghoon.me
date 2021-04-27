@@ -30,6 +30,15 @@ const Tag = styled.div`
   width: fit-content;
 `;
 
+const Headline = styled.blockquote`
+  padding: 0 0 0 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  border-left: 0.3rem solid #1EB49F;
+  line-height: 1.2;
+  color: #222;
+`;
+
 const Article = styled.div`
   margin: 3rem 0;
   word-break: break-all;
@@ -41,10 +50,12 @@ const Article = styled.div`
   h1 {
     color: #1EB49F;
     line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
   h2, h3 {
     line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
   pre, code {
@@ -79,6 +90,16 @@ const Article = styled.div`
     left: 0;
     bottom: 0;
     transition: 0.3s;
+  }
+
+
+  em {
+    font-weight: bold;
+    color: #1EB49F;
+  }
+
+  hr {
+    margin: 2.5rem 0;
   }
 `;
 
@@ -124,6 +145,7 @@ const BlogPostTemplate = ({ data, location }) => {
               <Tag>#{post.frontmatter.tag}</Tag>
             </Link>
           </PostHeadLine>
+          <Headline>{post.frontmatter.description}</Headline>
           <Article
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"

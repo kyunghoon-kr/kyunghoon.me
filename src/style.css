@@ -327,3 +327,7 @@ table thead tr th {
   font-weight: normal;
   font-style: normal;
 }
+
+#gatsby-focus-wrapper {
+  position: relative;
+}
