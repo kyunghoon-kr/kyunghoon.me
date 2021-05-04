@@ -51,6 +51,16 @@ const Article = styled.div`
     color: #1EB49F;
     line-height: 1.5;
     margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  blockquote {
+    padding: 0 0 0 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    border-left: 0.3rem solid #666;
+    line-height: 1.2;
+    color: #666;
   }
 
   h2, h3 {
