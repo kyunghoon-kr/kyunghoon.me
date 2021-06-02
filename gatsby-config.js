@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Kyunghoon.me`,
     author: {
@@ -6,7 +7,7 @@ module.exports = {
       summary: `🐥 Frontend Developer 👻 Emoji Lover `,
     },
     description: `경험에 기반한 성장과정을 담은 기술 블로그를 꿈꿉니다.`,
-    siteUrl: `https://kyunghoon.me/`,
+    siteUrl: `https://kyunghoon.me`,
     social: {
       twitter: `김경훈(June)`,
     },
@@ -102,5 +103,6 @@ module.exports = {
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
+    
   ],
 }
