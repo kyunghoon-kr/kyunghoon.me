@@ -42,15 +42,23 @@ const Headline = styled.blockquote`
 const Article = styled.div`
   margin: 3rem 0;
   word-break: break-all;
+  li {
+    margin-left: 1rem !important;
+    list-style: circle;
+  }
+  ul {
+    padding-left: 1rem;
+  }
   p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    overflow: hidden;
   }
 
   h1 {
     color: #1EB49F;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 2rem;
   }
 
@@ -65,7 +73,8 @@ const Article = styled.div`
 
   h2, h3 {
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
   }
 
   pre, code {
@@ -85,6 +94,8 @@ const Article = styled.div`
   a {
     color: #1B60FF;
     position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   a:hover:after {
@@ -100,6 +111,10 @@ const Article = styled.div`
     left: 0;
     bottom: 0;
     transition: 0.3s;
+  }
+
+  .gatsby-resp-image-link:after {
+    display: none;
   }
 
 

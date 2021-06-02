@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const TOCWrapper = styled.div`
     position: sticky;
-    top: 30%;
+    top: 50%;
     right: 3rem;
     height: fit-content;
     background-color: white;
