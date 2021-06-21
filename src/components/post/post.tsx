@@ -78,12 +78,15 @@ const Post:React.FC<PostProps> = ({ post, title }) => {
           itemType="http://schema.org/Article"
         >
         <Link to={post.fields.slug} itemProp="url">
-          <header>
-            <PostImgBackground/>
+        <header>
+          <PostImgBackground/>
+            { thumbnailImgFluid && 
             <PostImgWrapper>
               <Img fluid={thumbnailImgFluid}/>
             </PostImgWrapper>
-          </header>
+            }
+        </header>
+          
           <PostDescription>
             <h2>
               <span itemProp="headline">{title}</span>
