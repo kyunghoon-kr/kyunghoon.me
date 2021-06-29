@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     p {
         line-height: 1.5;
+        letter-spacing: 0.5px;
     }
 
     @media only screen and (max-width: 48rem) {

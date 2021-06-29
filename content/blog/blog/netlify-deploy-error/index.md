@@ -3,7 +3,7 @@ title: "[Gatsby + Netlify] 배포 시에 Not Found Error 해결하기"
 date: "2021-06-02T21:33:00.000Z"
 description: "Gatsby project를 Netlify에 배포하면서 발생하는 에러를 해결한 경험에 대해 작성해보았다."
 tag: "blog"
-thumbnail: ""
+thumbnail: "banner.jpg"
 ---
 
 Netlify는 *웹 애플리케이션이나 정적 웹 사이트 호스팅을 손쉽게 할 수 있도록 도와주는 서비스*이다. 특히 Git Repository와 연동하면 지정한 branch로 push할 때 마다 자동으로 배포해주는 등 간단하면서도 강력한 기능을 제공한다. Gatsby와의 궁합도 아주 괜찮기 때문에 Gatsby + Netlify 조합은 많이들 사용하고 있다.
