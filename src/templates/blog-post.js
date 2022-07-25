@@ -48,11 +48,17 @@ const Article = styled.div`
   }
   ul {
     padding-left: 1rem;
+    margin-bottom: 1rem;
   }
+
   p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
+  }
+
+  li p {
+    margin-bottom: 0rem;
   }
 
   h1 {
