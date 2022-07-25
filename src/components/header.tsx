@@ -93,7 +93,7 @@ const Header:React.FC = () => {
                             <Logo>👻 kyunghoon.me </Logo>
                         </Link>
                         <Banner>
-                            내가쓰는 개발 아카이브 
+                            ViewLOG
                         </Banner>
                         <Categories>
                             {categories.map((category: { fieldValue: string }) => {
